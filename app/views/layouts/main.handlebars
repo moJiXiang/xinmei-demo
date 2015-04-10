@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{{title }}</title>
+  {{!-- include components css --}}
+  <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap-theme.min.css">
+  {{!-- end include --}}
+  {{!-- use new stylesheet to cover bootstrap css --}}
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/svg.css">
+  <link rel="stylesheet" href="/css/statechart.css">
+  {{!-- end use --}}
+  {{#if ENV_DEVELOPMENT}}
+    <script src="http://localhost:35729/livereload.js"></script>
+  {{/if}}
+</head>
+<body>
+
+    
+    {{{body}}}
+
+
+</body>
+  {{!-- include components scripts --}}
+	<script src="components/jquery/dist/jquery.min.js"></script>
+  <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="components/d3/d3.min.js"></script>
+  <script src="components/echarts/build/dist/echarts.js"></script>
+  {{!-- end include --}}
+
+  {{!-- include scripts --}}
+  <script src="colorbrewer.js"></script>
+  <script src="lib/geometry.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/statechart-data.js"></script>
+  <script src="js/statechart.js"></script>
+  <script src="script.js"></script>
+  {{!-- end include --}}
+</html>

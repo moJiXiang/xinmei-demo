@@ -1,0 +1,167 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* Custom Styles */
+.nav-stacked{
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    text-align: center;
+}
+ul.nav-stacked li{
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+ul.nav-stacked li:first-child{
+    border-top: none;
+}
+ul.nav-stacked li a{
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 0;
+}
+ul.nav-stacked li.active a, ul.nav-stacked li.active a:hover{
+    color: #fff;
+    background: #0088cc;
+    border: 1px solid #0088cc;
+}
+ul.nav-stacked li:first-child a{
+    border-radius: 4px 4px 0 0;
+}
+ul.nav-stacked li:last-child a{
+    border-radius: 0 0 4px 4px;
+}
+ul.nav-stacked.affix{
+    top: 30px; /* Set the top position of pinned element */
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+html.lt-ie9, html.lt-ie9 body {
+    width: auto;
+    height: 100px;
+}
+
+.unsupported-browser {
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 0 5px 45px;
+    margin: 8px 8px 8px 100px;
+    background: url(ie-notice.png) no-repeat center left;
+    display: none;
+}
+html.lt-ie9 .unsupported-browser {
+    display: block;
+}
+
+.nav-button {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+#docs-list {
+    margin: 50px 8px 8px 8px;
+}
+
+#docs-list .docs {
+    border-bottom: 1px solid #ccc;
+    margin: 12px 0;
+}
+
+html.lt-ie9 #graph-container {
+    display: none;
+}
+
+#split-container {
+    height: 100%;
+    width: 100%;
+}
+
+#graph-container {
+    width: 100%;
+    height: 300px;
+    // overflow-y: scroll;
+    visibility: hidden;
+}
+
+#docs-container {
+    width: 100%;
+    height: 300px;
+    position: fixed;
+    bottom: 0;
+    border-top: 3px solid #ccc;
+    border-left: 3px solid #ccc;
+    display: none;
+    overflow-y: scroll;
+    background-color: #fff;
+}
+#docs-close {
+    display: block;
+    position: fixed;
+    font-size: 1.4em;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    right: 8px;
+    background: white;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+}
+#docs-close:hover {
+    background: #ccc;
+}
+#docs-scroll {
+    overflow-y: scroll;
+}
+#docs {
+    padding: 8px;
+}
+
+.docs h2 {
+    font-size: 24px; /* h3 */
+    margin-top: 0;
+}
+.docs h3 {
+    font-size: 18px; /* h4 */
+}
+.docs h2 em, .docs h3 em {
+    font-size: 14px;
+    color: #999;
+    padding-left: 4px;
+    font-style: normal;
+}
+.docs pre {
+    margin: 8px;
+    padding: 4px;
+}
+.docs .select-object.missing {
+    color: #c7254e;
+}
+
+// cover bootstrap css
+.container {
+    width: 100%;
+    margin: 0;
+}
+
+.page-header {
+    margin: 0 0 20px 0;
+}
+
+.col-lg-2, .col-lg-10 {
+    margin-right: -4%
+}
