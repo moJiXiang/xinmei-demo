@@ -8,7 +8,7 @@ var config = {
     app: {
       name: 'xinmei-demo'
     },
-    port: 3000,
+    port: 3200,
     db: 'mongodb://localhost/xinmei-demo-development'
   },
 
@@ -17,7 +17,7 @@ var config = {
     app: {
       name: 'xinmei-demo'
     },
-    port: 3000,
+    port: 3200,
     db: 'mongodb://localhost/xinmei-demo-test'
   },
 
@@ -26,7 +26,7 @@ var config = {
     app: {
       name: 'xinmei-demo'
     },
-    port: 3000,
+    port: 3200,
     db: 'mongodb://localhost/xinmei-demo-production'
   }
 };
